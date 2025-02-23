@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "69964986-3808-4ca2-87fd-3d0f64775d37",
+		"name": "Js-Assessment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39299178"
+	},
+	"item": [
+		{
+			"name": "Parentheses",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/parentheses?n=10",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"parentheses"
+					],
+					"query": [
+						{
+							"key": "n",
+							"value": "10"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit-distance",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \"s\": \"geek\", \"t\": \"gesek\" }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/edit-distance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"edit-distance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "min-fee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"selectedCourses\": [\"A\", \"B\", \"C\"],\r\n    \"prices\": {\r\n        \"A\": 2000,\r\n        \"B\": 1500,\r\n        \"C\": 1800,\r\n        \"AB\": 3000,\r\n        \"BC\": 2800,\r\n        \"AC\": 3200,\r\n        \"ABC\": 8000\r\n    }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/min-fee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"min-fee"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
